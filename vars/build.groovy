@@ -1,7 +1,7 @@
 def call(String service, String name){
-  sh '''
+  sh """
                 cd code
                 cd ${service}
                 docker build -t ${name} .
-     '''
+     """
 }
