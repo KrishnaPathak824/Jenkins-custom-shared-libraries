@@ -7,6 +7,6 @@ def call(String image, String container){
             docker rm ${container}
         fi
 
-        docker run --name ${container} -d -p 8080:80 -e VITE_CLERK_PUBLISHABLE_KEY=\$KEY jhinga/${image}:latest
+        docker run --name ${container} -d -p 8081:80 -e VITE_CLERK_PUBLISHABLE_KEY=\$KEY jhinga/${image}:latest
     """
 }
